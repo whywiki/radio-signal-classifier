@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files - large, download via Kaggle instead
+*.pkl
+*.dat
+*.h5
+*.tar.bz2
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kaggle credentials - never commit these
+kaggle.json
