@@ -63,6 +63,14 @@ Overall test accuracy: **75%** on signals with SNR >= 0 dB
 
 The model works well on modulations with distinct spectral shapes. The main failure is QPSK vs 8PSK and QAM16 vs QAM64 - these pairs have nearly identical FFT magnitude spectra and differ primarily in phase, which magnitude-only features cannot capture. This is a feature limitation, not a model problem.
 
+### Confusion Matrix
+
+![Confusion Matrix](results/confusion_matrix.png)
+
+### Accuracy vs SNR
+
+![Accuracy vs SNR](results/accuracy_vs_snr.png)
+
 ---
 
 ## Load the Trained Model
