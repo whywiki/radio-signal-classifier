@@ -63,3 +63,12 @@ Overall test accuracy: **75%** on signals with SNR >= 0 dB
 
 The model works well on modulations with distinct spectral shapes. The main failure is QPSK vs 8PSK and QAM16 vs QAM64 - these pairs have nearly identical FFT magnitude spectra and differ primarily in phase, which magnitude-only features cannot capture. This is a feature limitation, not a model problem.
 
+---
+
+## Load the Trained Model
+
+```python
+model = RadioClassifier()
+model.load_state_dict(torch.load("model.pth", map_location="cpu"))
+model.eval()
+```
